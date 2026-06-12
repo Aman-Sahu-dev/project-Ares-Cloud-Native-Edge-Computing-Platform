@@ -5,8 +5,9 @@ import jakarta.validation.constraints.Size;
 
 public record TaskRequestDto(
         @NotBlank(message = "Command cannot be empty")
-        String command,
-
+        String entryPoint,
+        @NotBlank
+        String byteCode,
         String runtime,
 
         Long memoryLimitBytes,
