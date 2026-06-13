@@ -4,10 +4,11 @@ import java.time.Instant;
 
 public record TaskResponseDto(
         String taskId,
-        String command,
-        String Status,
+        String runtime,
+        String entryPoint,
+        String status,
         String stdout,
         String stderr,
         String exitCode,
-        Instant SubmittedAt
+        Instant submittedAt
 ) {}
